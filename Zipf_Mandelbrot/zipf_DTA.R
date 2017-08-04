@@ -33,8 +33,10 @@ centurydta1 <- read.table("centurydta1.csv", sep = "\t", head = T, quote = "",
                           fill = T, encoding = "UTF-8")
 centurydta2 <- read.table("centurydta2.csv", sep = "\t", head = T, quote = "",
                           fill = T, encoding = "UTF-8")
-centurydta3 <- read.table("centurydta3.csv", sep = "\t", head = T, quote = "",
-                          fill = T, encoding = "UTF-8")
+centurydta3 <- rbind(read.table("centurydta3a.csv", sep = "\t", head = T, quote = "",
+                          fill = T, encoding = "UTF-8"),
+                     read.table("centurydta3b.csv", sep = "\t", head = T, quote = "",
+                                fill = T, encoding = "UTF-8"))
 
 
 # randomize datasets
